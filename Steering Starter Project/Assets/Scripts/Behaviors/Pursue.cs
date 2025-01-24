@@ -16,7 +16,7 @@ public class Pursue : Seek
         Vector3 directionToTarget = target.transform.position - character.transform.position;
         float distanceToTarget = directionToTarget.magnitude;
         float mySpeed = character.linearVelocity.magnitude;
-        float predictionTime; 
+        float predictionTime;
         if (mySpeed <= distanceToTarget / maxPredictionTime)
         {
             // if I'm far enough away, I can use the max prediction time

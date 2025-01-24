@@ -14,6 +14,7 @@ public class Seeker : Kinematic
     void Start()
     {
         myMoveType = new Seek();
+        //myMoveType = new Wander();
         myMoveType.character = this;
         myMoveType.target = myTarget;
         myMoveType.flee = flee;

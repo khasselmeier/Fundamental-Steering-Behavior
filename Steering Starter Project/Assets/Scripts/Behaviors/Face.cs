@@ -2,14 +2,28 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Face : Align
+/*public class Face : Align
 {
-    // TODO: override Align's getTargetAngle to face the target instead of matching it's orientation
     public override float getTargetAngle()
     {
-        // --- replace me ---
-        float targetAngle = 0f;
-        // ------------------
+        // Calculate the angle to face the target
+        Vector3 direction = target.transform.position - character.transform.position;
+        direction.y = 0; // Ignore vertical component
+        if (direction.sqrMagnitude > 0.0f)
+        {
+            return Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg;
+        }
+        return character.transform.eulerAngles.y;
+    }
+}*/
+
+public class Face : Align
+{
+    public override float getTargetAngle()
+    {
+        Vector3 direction = target.transform.position - character.transform.position;
+        direction.y = 0;
+        float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg;
 
         return targetAngle;
     }

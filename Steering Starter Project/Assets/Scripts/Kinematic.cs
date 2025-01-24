@@ -62,5 +62,4 @@ public class Kinematic : MonoBehaviour
             angularVelocity = maxAngularVelocity * (angularVelocity / Mathf.Abs(angularVelocity));
         }
     }
-
 }
