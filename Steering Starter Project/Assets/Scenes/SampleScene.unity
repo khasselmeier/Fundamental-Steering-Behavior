@@ -781,7 +781,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &738384431
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -862,7 +862,7 @@ Transform:
   m_GameObject: {fileID: 738384429}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.92, y: 0, z: -11.16}
+  m_LocalPosition: {x: -3.74, y: 0, z: -2.77}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -883,9 +883,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   linearVelocity: {x: 0, y: 0, z: 0}
   angularVelocity: 0
-  maxSpeed: 10
+  maxSpeed: 7
   maxAngularVelocity: 45
-  myTarget: {fileID: 281066794}
+  myTarget: {fileID: 1035599774}
+  myTargets:
+  - {fileID: 1004383306}
+  - {fileID: 1759229712}
+  - {fileID: 1754951094}
+  - {fileID: 2101585448}
+  - {fileID: 200878234}
+  - {fileID: 1735539294}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1909,7 +1916,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   linearVelocity: {x: 0, y: 0, z: 0}
   angularVelocity: 0
-  maxSpeed: 5
+  maxSpeed: 3
   maxAngularVelocity: 45
   myTarget: {fileID: 281066794}
 --- !u!65 &1754951095
@@ -2120,7 +2127,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   linearVelocity: {x: 0, y: 0, z: 0}
   angularVelocity: 0
-  maxSpeed: 10
+  maxSpeed: 3
   maxAngularVelocity: 45
   myTarget: {fileID: 281066794}
 --- !u!1 &2088421419

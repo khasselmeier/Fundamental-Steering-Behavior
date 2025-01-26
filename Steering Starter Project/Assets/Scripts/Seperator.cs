@@ -5,31 +5,23 @@ using UnityEngine;
 public class Separator : Kinematic
 {
     Separation myMoveType;
-    Align myRotateType;
+    Face myRotateType;
+    //LookWhereGoing myFleeRotateType;
+    public Kinematic[] myTargets;
 
+    // Start is called before the first frame update
     void Start()
     {
         myMoveType = new Separation();
         myMoveType.character = this;
-        Kinematic[] kinematics = GameObject.FindObjectsOfType<Kinematic>();
-        int count = kinematics.Length - 1;
-        Kinematic[] filteredKinematics = new Kinematic[count];
-        int i = 0;
-        foreach (var k in kinematics)
-        {
-            if (k != this)
-            {
-                filteredKinematics[i] = k;
-                i++;
-            }
-        }
-        myMoveType.targets = filteredKinematics;
+        myMoveType.targets = myTargets;
 
-        myRotateType = new Align();
+        myRotateType = new Face();
         myRotateType.character = this;
         myRotateType.target = myTarget;
     }
 
+    // Update is called once per frame
     protected override void Update()
     {
         steeringUpdate = new SteeringOutput();
