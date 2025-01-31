@@ -17,13 +17,11 @@ public class Kinematic : MonoBehaviour
     // child classes will get new steering data for use in our update function
     protected SteeringOutput steeringUpdate;
 
-    // Start is called before the first frame update
     void Start()
     {
         steeringUpdate = new SteeringOutput(); // default to nothing. should be overriden by children
     }
 
-    // Update is called once per frame
     protected virtual void Update()
     {
         // something is breaking my angular velocity
@@ -33,7 +31,7 @@ public class Kinematic : MonoBehaviour
             angularVelocity = 0.0f;
         }
 
-        // update my position and rotation - Millington p. 58, lines 7-9
+        // update my position and rotation
         this.transform.position += linearVelocity * Time.deltaTime;
         if (Mathf.Abs(angularVelocity) > 0.01f)
         {
@@ -41,8 +39,7 @@ public class Kinematic : MonoBehaviour
             this.transform.eulerAngles += v * Time.deltaTime;
         }
 
-        // update linear and angular velocities - I might be accelerating or decelerating, etc.
-        // Millington p. 58, lines 11-13
+        // update linear and angular velocities
         if (steeringUpdate != null)
         {
             linearVelocity += steeringUpdate.linear * Time.deltaTime;
@@ -50,8 +47,6 @@ public class Kinematic : MonoBehaviour
         }
 
         // check for speeding and clip
-        // Millington p.58, lines 15-18
-        // note that Millington's pseudocode on p.58 does not clip angular velocity, but we do here
         if (linearVelocity.magnitude > maxSpeed)
         {
             linearVelocity.Normalize();
