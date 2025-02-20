@@ -3,30 +3,27 @@ using UnityEngine.SceneManagement;
 
 public class SceneCycle : MonoBehaviour
 {
-    public void SwitchToNextScene()
+    public void SwitchToObsAvoidScene()
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         int nextSceneIndex = currentSceneIndex + 1;
 
-        if (nextSceneIndex >= SceneManager.sceneCountInBuildSettings)
-        {
-            nextSceneIndex = 0;
-        }
+        SceneManager.LoadScene(nextSceneIndex);
+    }
+
+    public void SwitchToAvoidanceScene()
+    {
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        int nextSceneIndex = currentSceneIndex + 2;
 
         SceneManager.LoadScene(nextSceneIndex);
     }
 
-    public void SwitchToPreviousScene()
+    public void SwitchToDijkstraScene()
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        int nextSceneIndex = currentSceneIndex + 3;
 
-        int previousSceneIndex = currentSceneIndex - 1;
-
-        if (previousSceneIndex < 0)
-        {
-            previousSceneIndex = SceneManager.sceneCountInBuildSettings - 1;
-        }
-
-        SceneManager.LoadScene(previousSceneIndex);
+        SceneManager.LoadScene(nextSceneIndex);
     }
 }
