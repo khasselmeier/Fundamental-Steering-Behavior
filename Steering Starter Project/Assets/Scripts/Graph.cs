@@ -1,3 +1,4 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,14 +10,7 @@ public class Graph
     public List<Connection> getConnections(Node fromNode)
     {
         List<Connection> connections = new List<Connection>();
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
-=======
-
->>>>>>> Stashed changes
         foreach (Connection c in mConnections)
         {
             if (c.getFromNode() == fromNode)
@@ -30,18 +24,8 @@ public class Graph
     public void Build()
     {
         mConnections = new List<Connection>();
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-
-        Node[] nodes = GameObject.FindObjectsOfType<Node>();
-=======
         Node[] nodes = GameObject.FindObjectsOfType<Node>();
 
->>>>>>> Stashed changes
-=======
-        Node[] nodes = GameObject.FindObjectsOfType<Node>();
-
->>>>>>> Stashed changes
         foreach (Node fromNode in nodes)
         {
             foreach (Node toNode in fromNode.ConnectsTo)

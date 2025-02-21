@@ -5,20 +5,4 @@ using UnityEngine;
 public class Node : MonoBehaviour
 {
     public Node[] ConnectsTo;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-
-    private void OnDrawGizmos()
-    {
-        foreach (Node n in ConnectsTo)
-        {
-            Gizmos.color = Color.red;
-            Gizmos.DrawRay(transform.position, (n.transform.position - transform.position).normalized * 2);
-        }
-    }
-
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 }

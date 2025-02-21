@@ -5,7 +5,7 @@ using UnityEngine;
 public class ObstacleAvoidance : Seek
 {
     public float avoidDistance = 20f;
-    public float lookAhead = 7f;
+    public float lookAhead = 8f;
 
     protected override Vector3 getTargetPosition()
     {
