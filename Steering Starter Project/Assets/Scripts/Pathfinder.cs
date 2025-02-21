@@ -7,10 +7,15 @@ public class Pathfinder : Kinematic
     public Node start;
     public Node goal;
     Graph myGraph;
+<<<<<<< Updated upstream
 
     FollowPath myMoveType;
     LookWhereGoing myRotateType;
 
+=======
+    FollowPath myMoveType;
+    LookWhereGoing myRotateType;
+>>>>>>> Stashed changes
     GameObject[] myPath;
 
     void Start()
@@ -22,12 +27,18 @@ public class Pathfinder : Kinematic
         Graph myGraph = new Graph();
         myGraph.Build();
         List<Connection> path = Dijkstra.pathfind(myGraph, start, goal);
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
         myPath = new GameObject[path.Count + 1];
         int i = 0;
         foreach (Connection c in path)
         {
+<<<<<<< Updated upstream
             Debug.Log("from " + c.getFromNode() + " to " + c.getToNode() + " @" + c.getCost());
+=======
+>>>>>>> Stashed changes
             myPath[i] = c.getFromNode().gameObject;
             i++;
         }

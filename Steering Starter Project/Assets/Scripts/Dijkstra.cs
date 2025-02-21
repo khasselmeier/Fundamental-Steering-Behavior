@@ -116,6 +116,10 @@ public static class Dijkstra
                         continue;
                     }
                 }
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
                 else
                 {
                     endNodeRecord = new NodeRecord();
@@ -130,7 +134,10 @@ public static class Dijkstra
                     open.add(endNodeRecord);
                 }
             }
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
             open.remove(current);
             closed.add(current);
         }

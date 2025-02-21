@@ -5,6 +5,7 @@ using UnityEngine;
 public class Node : MonoBehaviour
 {
     public Node[] ConnectsTo;
+<<<<<<< Updated upstream
 
     private void OnDrawGizmos()
     {
@@ -15,4 +16,6 @@ public class Node : MonoBehaviour
         }
     }
 
+=======
+>>>>>>> Stashed changes
 }
