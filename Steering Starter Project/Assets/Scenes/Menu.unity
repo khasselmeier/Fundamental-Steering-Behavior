@@ -685,7 +685,11 @@ MonoBehaviour:
       - m_Target: {fileID: 871405947}
         m_TargetAssemblyTypeName: SceneCycle, Assembly-CSharp
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         m_MethodName: SwitchToObsAvoidScene
+=======
+        m_MethodName: SwitchToSteeringScene
+>>>>>>> Stashed changes
 =======
         m_MethodName: SwitchToSteeringScene
 >>>>>>> Stashed changes

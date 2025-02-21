@@ -6,6 +6,7 @@ public class FollowPath : Seek
 {
     public GameObject[] path;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
     float pathOffset;
 
@@ -13,17 +14,23 @@ public class FollowPath : Seek
 
     float targetRadius = .5f;
 =======
+=======
+>>>>>>> Stashed changes
     int currTarget = 0;
     float targetRadius = 0.5f;
 
     int closestIndex = 0;
     float closestDistance = float.MaxValue;
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
     public override SteeringOutput getSteering()
     {
         if (target == null)
         {
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
             int nearestPathIndex = 0;
             float distanceToNearest = float.PositiveInfinity;
@@ -52,6 +59,8 @@ public class FollowPath : Seek
             }
             target = path[currentPathIndex];
 =======
+=======
+>>>>>>> Stashed changes
             for (int i = 0; i < path.Length; i++)
             {
                 float distance = Vector3.Distance(character.transform.position, path[i].transform.position);
@@ -69,6 +78,9 @@ public class FollowPath : Seek
         {
             currTarget = (currTarget + 1) % path.Length;
             target = path[currTarget];
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         }
 

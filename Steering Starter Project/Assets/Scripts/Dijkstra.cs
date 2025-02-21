@@ -117,6 +117,10 @@ public static class Dijkstra
                     }
                 }
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 =======
 
 >>>>>>> Stashed changes
@@ -135,7 +139,10 @@ public static class Dijkstra
                 }
             }
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
             open.remove(current);

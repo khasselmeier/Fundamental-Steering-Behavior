@@ -4,7 +4,11 @@ using UnityEngine.SceneManagement;
 public class SceneCycle : MonoBehaviour
 {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     public void SwitchToObsAvoidScene()
+=======
+    public void SwitchToSteeringScene()
+>>>>>>> Stashed changes
 =======
     public void SwitchToSteeringScene()
 >>>>>>> Stashed changes

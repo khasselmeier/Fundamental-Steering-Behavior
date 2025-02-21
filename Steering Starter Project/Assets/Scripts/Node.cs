@@ -6,6 +6,7 @@ public class Node : MonoBehaviour
 {
     public Node[] ConnectsTo;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
     private void OnDrawGizmos()
     {
@@ -16,6 +17,8 @@ public class Node : MonoBehaviour
         }
     }
 
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 }

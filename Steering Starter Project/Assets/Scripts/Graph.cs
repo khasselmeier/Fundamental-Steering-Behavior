@@ -10,6 +10,10 @@ public class Graph
     {
         List<Connection> connections = new List<Connection>();
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 =======
 
 >>>>>>> Stashed changes
@@ -27,8 +31,13 @@ public class Graph
     {
         mConnections = new List<Connection>();
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
         Node[] nodes = GameObject.FindObjectsOfType<Node>();
+=======
+        Node[] nodes = GameObject.FindObjectsOfType<Node>();
+
+>>>>>>> Stashed changes
 =======
         Node[] nodes = GameObject.FindObjectsOfType<Node>();
 
